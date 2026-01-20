@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нейросети в жизни человека</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+</head>
+<body>
+    <div class="app" id="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h1 class="logo-text">Нейросети в жизни человека</h1>
+                </div>
+                <div class="header-controls">
+                    <div class="api-status" id="apiStatus">
+                        <i class="fas fa-circle"></i>
+                        <span>API</span>
+                    </div>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Нейросети 
+                            <span class="highlight">меняют наш мир</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Искусственный интеллект уже стал неотъемлемой частью нашей повседневной жизни. 
+                            От голосовых помощников до рекомендательных систем — нейросети повсюду.
+                        </p>
+                        <div class="feature-badges">
+                            <span class="badge badge-blue">Персонализация</span>
+                            <span class="badge badge-purple">Автоматизация</span>
+                            <span class="badge badge-green">Инновации</span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="/photo/chipAI.jpg" 
+                                 alt="AI Neural Network" class="neural-image">
+                            <div class="image-badge">
+                                <span>AI 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondary Title -->
+        <section class="secondary-title">
+            <div class="container">
+                <h2 class="section-title">
+                    Нейросети в <span class="highlight">повседневной жизни</span>
+                </h2>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="cards-section">
+            <div class="container">
+                <div class="cards-grid">
+                    <!-- Smartphones Card -->
+                    <div class="card" data-category="smartphones">
+                        <div class="card-header">
+                            <i class="fas fa-mobile-alt card-icon icon-blue"></i>
+                            <h3 class="card-title">Смартфоны</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Камеры с ИИ, голосовые помощники, предиктивный текст, распознавание лиц — всё это работает на нейросетях прямо в вашем кармане.</p>
+                        </div>
+                    </div>
+
+                    <!-- Music Card -->
+                    <div class="card" data-category="music">
+                        <div class="card-header">
+                            <i class="fas fa-music card-icon icon-blue"></i>
+                            <h3 class="card-title">Музыка и видео</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Spotify, YouTube, Netflix используют ИИ для персональных рекомендаций. Алгоритмы знают ваши предпочтения лучше вас самих!</p>
+                        </div>
+                    </div>
+
+                    <!-- Transport Card -->
+                    <div class="card" data-category="transport">
+                        <div class="card-header">
+                            <i class="fas fa-car card-icon icon-red"></i>
+                            <h3 class="card-title">Транспорт</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Автопилоты Tesla, навигация в реальном времени, оптимизация маршрутов в Яндекс.Такси — ИИ делает дороги безопаснее.</p>
+                        </div>
+                    </div>
+
+                    <!-- Shopping Card -->
+                    <div class="card" data-category="shopping">
+                        <div class="card-header">
+                            <i class="fas fa-shopping-cart card-icon icon-blue"></i>
+                            <h3 class="card-title">Покупки</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Рекомендации Amazon, ценовые предложения, чат-боты поддержки — нейросети помогают найти то, что вам нужно.</p>
+                        </div>
+                    </div>
+
+                    <!-- Medicine Card -->
+                    <div class="card" data-category="medicine">
+                        <div class="card-header">
+                            <i class="fas fa-heart card-icon icon-green"></i>
+                            <h3 class="card-title">Медицина</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Диагностика по МРТ, анализ крови, разработка лекарств — ИИ спасает жизни и ускоряет лечение.</p>
+                        </div>
+                    </div>
+
+                    <!-- Communication Card -->
+                    <div class="card" data-category="communication">
+                        <div class="card-header">
+                            <i class="fas fa-comments card-icon icon-gray"></i>
+                            <h3 class="card-title">Общение</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>ChatGPT, переводчики, голосовые помощники — ИИ ломает языковые барьеры и помогает общаться.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section class="future-section">
+            <div class="container">
+                <h2 class="section-title future-title">Будущее с нейросетями</h2>
+                
+                <div class="future-grid">
+                    <a href="pages/personal-medicine.html" class="future-card" style="text-decoration: none; color: inherit;">
+                        <div class="future-icon">🧬</div>
+                        <h3>Персональная медицина</h3>
+                        <p>Лечение, адаптированное под ваш уникальный геном</p>
+                    </a>
+                    
+                    <a href="pages/smart-cities.html" class="future-card" style="text-decoration: none; color: inherit;">
+                        <div class="future-icon">🏠</div>
+                        <h3>Умные города</h3>
+                        <p>Инфраструктура, которая думает и адаптируется</p>
+                    </a>
+                    
+                    <a href="pages/personal-education.html" class="future-card" style="text-decoration: none; color: inherit;">
+                        <div class="future-icon">🎓</div>
+                        <h3>Персональное образование</h3>
+                        <p>ИИ-наставники для каждого студента</p>
+                    </a>
+                    
+                    <a href="pages/global-problems.html" class="future-card" style="text-decoration: none; color: inherit;">
+                        <div class="future-icon">🌍</div>
+                        <h3>Решение глобальных проблем</h3>
+                        <p>Климат, энергия, бедность — ИИ поможет всё решить</p>
+                    </a>
+                </div>
+
+                <div class="cta-section">
+                    <h3>Хотите узнать больше?</h3>
+                    <p>Задайте вопрос нашему ИИ-помощнику! Он расскажет всё о нейросетях простым языком.</p>
+                    <button class="cta-button" id="ctaChatButton">
+                        🧠 Спросить у ИИ
+                    </button>
+                </div>
+
+                <div class="footer-info">
+                    <h4>🧠 Нейросети в жизни</h4>
+                    <p>Исследуйте мир искусственного интеллекта вместе с нами</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chat Button -->
+        <div class="chat-button" id="chatButton">
+            <i class="fas fa-comments"></i>
+            <span>Спросить у ChatGPT</span>
+        </div>
+
+        <!-- Chat Modal -->
+        <div class="chat-modal" id="chatModal">
+            <div class="chat-modal-content">
+                <div class="chat-header">
+                    <h3><i class="fas fa-robot"></i> ChatGPT Ассистент</h3>
+                    <button class="close-chat" id="closeChat">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            Привет! Я готов ответить на ваши вопросы о нейросетях и искусственном интеллекте. Что вас интересует?
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" 
+                           class="chat-input" 
+                           id="chatInput" 
+                           placeholder="Задайте вопрос о нейросетях..."
+                           maxlength="500">
+                    <button class="send-button" id="sendButton">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="chat-footer">
+                    <small>Powered by OpenAI GPT-4</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-spinner">
+                <i class="fas fa-brain fa-spin"></i>
+                <p>Обращаюсь к нейросети...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="config/api-keys.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/chatgpt.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
